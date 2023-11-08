@@ -4,6 +4,8 @@ Welcome to the Initiation to Rust workshop! The objective of this workshop is to
 
 Rust is a multi-paradigm, general-purpose programming language that emphasizes performance, type safety, and concurrency. It enforces memory safety, meaning that all references point to valid memory, without requiring the use of automated memory management techniques such as garbage collection. To simultaneously enforce memory safety and prevent data races, its "borrow checker" tracks the object lifetime of all references in a program during compilation. Rust was influenced by ideas from functional programming, including immutability, higher-order functions, and algebraic data types. It is popular for systems programming.
 
+You can learn more about memory management in Rust [here](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+
 ## Step 00
 * Begin by installing Rust on your system by following the installation instructions [here](https://www.rust-lang.org/tools/install)
 * Once Rust is installed, you can initialize your Rust project using the Cargo tool. Cargo is Rust's package manager and build tool. You can find more information about Cargo in the official documentation [here](https://doc.rust-lang.org/cargo/index.html)
