@@ -1,4 +1,4 @@
-# initiation_to_rust
+# Initiation to Rust Programming Language
 The objective of this workshop is to initiate you to Rust programming Language, this workshop will dive in the basics of this language, so feel free to keep going further later !
 
 I invite you if you want to go learn more things after this workshop to go into the Official documentation which is a really high quality content for learning Rust [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html#the-rust-programming-language)
