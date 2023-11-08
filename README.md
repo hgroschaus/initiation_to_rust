@@ -15,16 +15,17 @@ sudo dnf -y install curl
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-* Once Rust is installed, you can initialize your Rust project using the Cargo tool. Cargo is Rust's package manager and build tool. You can find more information about Cargo in the official documentation [here](https://doc.rust-lang.org/cargo/getting-started/first-steps.html)
-```
-cargo new workshop_initiation
-```
 
 * Open your integrated development environment (IDE) of choice. Popular choices for Rust development include Visual Studio Code with the Rust extension, RustRover from JetBrains or Sumblime Text.
 
-* Open the src/main.rs file in your IDE. This file contains the main Rust code for your project.
 
-* You should see a simple "Hello, World!" example code in main.rs. It might look something like this:
+## Step 01
+
+* For now we will start with the basics and create a simple Hello World function.
+
+* Start creating  the "hello_world" folder, inside you can add main.rs file
+
+* You can now type the code below to create your first function in Rust:
 ```rust
 fn main() {
     println!("Hello, World!");
@@ -36,9 +37,137 @@ fn main() {
 
 * In the terminal, run the following command to build and execute your Rust code:
 ```
-cargo run
+rustc main.rs
 ```
 
 **You will see the output "Hello, World!" in the terminal. Congratulations, you've successfully run your first Rust program!**
 
-## Step 01
+## Step 02
+
+In this step, you will learn more about Variable and Data Types
+
+**It is obvious that Rust allows you to declare all you're variable without adding the optional type annotations, however for this step i would like you to use the type annotations for all your declarations and it still is a good practice to avoid easy mistakes related to types...**
+
+* First I will ask you to create several variables, you should choose the according type depending of each cases:
+  - i: integer type, assigned value of `42`
+  - j: integer type, assigned value of `32421`
+  - k: integer type, assigned value of `-75000`
+  - f: floating-point type, assigned value of `3.14159`
+  - t: tuple of integers, assigned value of  `i, j, k, f`
+  - a: array of strings, assigned value of `"This", "Was", "A", "Good", "Day"`
+  - HELLO_WORLD: const string type,  assigned value of `Hello World 😁`
+
+> if you need informations about Rust Data Types don't forget to check the [Book](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+ 
+* After declaring all your variables you can add this code at the end of your function and check if everything matches:
+
+```rust
+println!("i = {}", i);
+println!("j = {}", j);
+println!("k = {}", k);
+println!("f = {}", f);
+println!("t = {:?}", t);
+println!("a = {:?}", a);
+println!("HELLO_WORLD = {}", HELLO_WORLD);
+```
+
+## Step 03
+
+In this step you will learn more about functions. You have to keep your previous variables.
+
+**Just like before i will ask you to precise return types in all your functions**
+
+I believe the name of the functions are pretty self-explanatory, so i'll let you implement them.
+
+```rust
+println!("{}",add(i, j));
+println!("{}", sub(k, f));
+display(t);
+
+let a: [&str; 4] = pop(a);
+println!("{:?} ",a);
+```
+
+> If you're observant, you might be wondering why you can redeclare the same function 'a' in this scope. Congratulations on your attentiveness! If you're interested, you can learn more about the concept of shadowing by clicking [here](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing) 
+
+Expected OUTPUT:
+```
+32463
+-75003.14
+42 32421 -75000 3.14159
+["This", "Was", "A", "Good"] 
+```
+
+## Informations about mutability of the variables
+
+After you've completed your code, add the following line:
+```
+i = i + 1;
+```
+
+If you tried to compile your program and encountered an issue, you just witnessed something we haven't discussed yet. In Rust, by default, variables are immutable. This is one of the ways Rust encourages writing code that is safe and suitable for concurrency. However, you still have the option to make your variables mutable.
+
+Make your variable "i" mutable and try compiling your code again
+
+You can find more information about variables and mutability [here](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#variables-and-mutability)
+
+## Step 04
+
+> Tip: Create a new folder with a new main file for this step.
+
+In this step let's delve [contol flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+
+We previously overlooked a type `bool`. Without delving too deep into details, 
+
+### Conditions
+
+Implement your main to produce the following output:
+
+OUTPUT
+```
+42 is even
+89 number is not divisible by 4, 3, or 2
+32 number is divisible by 4
+30 number is divisible by 3
+10 number is divisible by 2
+```
+
+> Don't forget to create functions to avoid repeating code.
+
+### Loops
+
+For the loop part, you'll be tasked with three different loops. We'll exclude the while loop since it functions as you already know.
+
+* Loop with a Break:
+    - Initialize a mutable variable `n` to 0.
+    - Use a loop to increment `n` until it reaches 42.
+    - When `n` equals 42, break out of the loop and set `result` to `n` * 2.
+    - Print the `result`.
+
+* Iterate Over an Array:
+    - Create an array with values: [10, 20, 30, 40, 50].
+    - Utilize a loop to iterate over each element in the array.
+    - Print each element.
+
+* Range Loop:
+    - Use a loop to iterate over numbers from 1 to 9 (inclusive).
+    - Print each number in the loop.
+
+
+```
+result = 84
+the value is: 10
+the value is: 20
+the value is: 30
+the value is: 40
+the value is: 50
+range: 1
+range: 2
+range: 3
+range: 4
+range: 5
+range: 6
+range: 7
+range: 8
+range: 9
+```
