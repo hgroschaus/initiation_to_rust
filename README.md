@@ -11,7 +11,13 @@ You can learn more about memory management in Rust [here](https://doc.rust-lang.
 ```
 sudo dnf -y install curl
 ```
-* Begin by installing Rust on your system by following the installation instructions [here](https://www.rust-lang.org/tools/install)
+* Begin by installing Rust on your system by typing the command below, more infos [here](https://www.rust-lang.org/tools/install)
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 * Once Rust is installed, you can initialize your Rust project using the Cargo tool. Cargo is Rust's package manager and build tool. You can find more information about Cargo in the official documentation [here](https://doc.rust-lang.org/cargo/getting-started/first-steps.html)
+```
+cargo new workshop_initiation
+```
 
 ## Step 01
