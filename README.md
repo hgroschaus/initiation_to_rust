@@ -20,4 +20,25 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo new workshop_initiation
 ```
 
+* Open your integrated development environment (IDE) of choice. Popular choices for Rust development include Visual Studio Code with the Rust extension, RustRover from JetBrains or Sumblime Text.
+
+* Open the src/main.rs file in your IDE. This file contains the main Rust code for your project.
+
+* You should see a simple "Hello, World!" example code in main.rs. It might look something like this:
+```rust
+fn main() {
+    println!("Hello, World!");
+}
+
+```
+
+* Open a terminal or command prompt and navigate to your project directory. You should be in the same directory as your Cargo.toml file, which is the project's configuration file.
+
+* In the terminal, run the following command to build and execute your Rust code:
+```
+cargo run
+```
+
+**You will see the output "Hello, World!" in the terminal. Congratulations, you've successfully run your first Rust program!**
+
 ## Step 01
