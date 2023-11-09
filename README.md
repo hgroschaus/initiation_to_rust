@@ -115,7 +115,7 @@ You can find more information about variables and mutability [here](https://doc.
 
 > Tip: Create a new folder with a new main file for this step.
 
-In this step let's delve [contol flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+In this step let's delve into [contol flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 We previously overlooked a type `bool`. Without delving too deep into details, 
 
