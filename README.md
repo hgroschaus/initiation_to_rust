@@ -118,6 +118,9 @@ You can find more information about variables and mutability [here](https://doc.
 In this step let's delve into [contol flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 We previously overlooked a type `bool`. Without delving too deep into details, 
+In most programming languages, including Rust, the `bool` type is fundamental to control flow. 
+It represents boolean values, namely `true` or `false`. Boolean values are pivotal in decision-making processes within programs. **Conditions**, **loops**, and various control structures often rely on boolean expressions to determine the flow of execution.
+
 
 ### Conditions
 
