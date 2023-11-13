@@ -59,7 +59,7 @@ In this step, you will learn more about Variable and Data Types
 
 > if you need informations about Rust Data Types don't forget to check the [Book](https://doc.rust-lang.org/book/ch03-02-data-types.html)
  
-* After declaring all your variables you can add this code at the end of your function and check if everything matches:
+* After declaring all your variables you can add these lines of code at the end of your function to check if everything matches:
 
 ```rust
 println!("i = {}", i);
@@ -174,3 +174,62 @@ range: 7
 range: 8
 range: 9
 ```
+
+## Step 05
+
+In this step we will learn about struct.
+
+I will slowly stop givin you pieces of code, so far you should be able to make it all by yourself
+
+### Declare User Struct
+
+Create `User` struct containing those pieces of data: 
+* firstname,
+* lastname,
+* age,
+* email,
+* city,
+* enabled,
+* uid
+
+Match this output:
+```
+User: John Doe is 32 from New York, [ email: john.doe@mail.com, account is enabled: true, uid: 123456 ]
+```
+
+### Declare Rgb tuple Struct
+
+Now declare green, red, blue, black and white using `Rgb tuple struct type` and assigning correct values
+
+### Declare Circle Struct and Implement Methods
+
+* Declare `Circle` Struct:
+    * The `Circle` struct should contain a single piece of data, the `radius`. Use the most appropriate and precise type for the radius.
+
+* Implement Methods for Circle Struct:
+    * `area`: Return the area of the circle.
+    * `perimeter`: Return the perimeter of the circle.
+    * `grow`: Allow the user to increment the size of the circle.
+    * `is_larger`: Return a boolean indicating if the radius of one circle is larger than another.
+
+**To verify this functionality, perform the following actions:**
+
+* Declare `circle0` with a radius of 2.
+* Declare `circle1` with a radius of 3.
+* Increase the `radius` of `circle0` by 2 units.
+
+The expected output should be as follows:
+
+```
+Circle0 area: 12.566370614359172
+Circle0 perimeter: 12.566370614359172
+Circle1 area: 28.274333882308138
+Circle1 perimeter: 18.84955592153876
+
+Circle0 area after grow: 50.26548245743669
+Circle0 perimeter after grow: 25.132741228718345
+Is circle0 larger than circle1 ? true
+```
+
+## That's the culmination of your initiation into Rust! If you're keen on exploring further, I suggest diving into topics like [enum](https://doc.rust-lang.org/book/ch06-00-enums.html) and [ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html) for more intriguing concepts in Rust programming.
+
